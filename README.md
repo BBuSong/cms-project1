@@ -41,7 +41,7 @@
   - 최근 이용자들이 많이 찾아 본 상품을 볼 수 있다. 
 
 ## ERD 
-![image](https://github.com/BBuSong/cms-project1/assets/129375053/905fd8c1-1420-4613-9eba-75d9080fefe4)
+![image](https://github.com/BBuSong/cms-project1/assets/129375053/1d4ad7dc-86d9-4e1c-a6a1-2d29622c71e8)
 
 
 # 🗒 게시판 만들기
