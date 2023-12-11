@@ -41,6 +41,8 @@
   - 최근 이용자들이 많이 찾아 본 상품을 볼 수 있다. 
 
 ## ERD 
+![image](https://github.com/BBuSong/cms-project1/assets/129375053/10aee465-f813-4893-81f7-a0da7a1a5600)
+
 # 🗒 게시판 만들기
 
 간단히 사용자들과 소통할 수 있는 게시판 서비스입니다. 
@@ -76,8 +78,6 @@
   - 로그인한 사용자는 권한에 관계 없이 댓글을 작성할 수 있다. 
   - 사용자는 댓글 내용(텍스트)를 작성할 수 있다. 
 
-## ERD 
-![ERD](doc/img/erd.png)
 
 ## Trouble Shooting
 [go to the trouble shooting section](doc/TROUBLE_SHOOTING.md)
