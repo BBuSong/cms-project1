@@ -10,10 +10,12 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.envers.AuditOverride;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -25,12 +27,14 @@ public class User extends BaseEntity{
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
+  private String userId;
   private String name;
   private String password;
   private String cardNumber;
 
   public static User from(SignUpForm form) {
     return User.builder()
+              .userId(form.getUserId())
               .name(form.getName())
               .password(form.getPassword())
               .cardNumber(form.getCardNumber())
