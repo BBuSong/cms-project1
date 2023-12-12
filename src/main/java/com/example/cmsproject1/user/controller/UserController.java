@@ -1,14 +1,13 @@
-package com.example.cmsproject1.controller;
+package com.example.cmsproject1.user.controller;
 
 import static com.example.cmsproject1.exception.ErrorCode.NOT_FOUND_USER;
 
-import com.example.cmsproject1.config.JwtProvider;
-import com.example.cmsproject1.domain.common.UserVo;
-import com.example.cmsproject1.domain.model.User;
-import com.example.cmsproject1.domain.repository.UserRepository;
-import com.example.cmsproject1.domain.user.UserDto;
-import com.example.cmsproject1.exception.UserException;
-import com.example.cmsproject1.service.UserService;
+import com.example.cmsproject1.user.config.JwtProvider;
+import com.example.cmsproject1.user.type.UserVo;
+import com.example.cmsproject1.user.entity.User;
+import com.example.cmsproject1.user.dto.UserDto;
+import com.example.cmsproject1.user.exception.UserException;
+import com.example.cmsproject1.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

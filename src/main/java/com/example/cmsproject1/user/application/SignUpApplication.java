@@ -1,10 +1,10 @@
-package com.example.cmsproject1.application;
+package com.example.cmsproject1.user.application;
 
-import com.example.cmsproject1.domain.SignUpForm;
-import com.example.cmsproject1.domain.model.User;
+import com.example.cmsproject1.user.SignUpForm;
+import com.example.cmsproject1.user.entity.User;
 import com.example.cmsproject1.exception.ErrorCode;
-import com.example.cmsproject1.exception.UserException;
-import com.example.cmsproject1.service.SignUpService;
+import com.example.cmsproject1.user.exception.UserException;
+import com.example.cmsproject1.user.service.SignUpService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

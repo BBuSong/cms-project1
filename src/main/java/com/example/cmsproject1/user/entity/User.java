@@ -1,6 +1,7 @@
-package com.example.cmsproject1.domain.model;
+package com.example.cmsproject1.user.entity;
 
-import com.example.cmsproject1.domain.SignUpForm;
+import com.example.cmsproject1.user.SignUpForm;
+import com.example.cmsproject1.domain.model.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

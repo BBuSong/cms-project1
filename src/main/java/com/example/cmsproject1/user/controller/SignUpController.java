@@ -1,7 +1,7 @@
-package com.example.cmsproject1.controller;
+package com.example.cmsproject1.user.controller;
 
-import com.example.cmsproject1.application.SignUpApplication;
-import com.example.cmsproject1.domain.SignUpForm;
+import com.example.cmsproject1.user.application.SignUpApplication;
+import com.example.cmsproject1.user.SignUpForm;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

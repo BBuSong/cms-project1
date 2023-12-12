@@ -1,6 +1,6 @@
-package com.example.cmsproject1.domain.repository;
+package com.example.cmsproject1.user.repository;
 
-import com.example.cmsproject1.domain.model.User;
+import com.example.cmsproject1.user.entity.User;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

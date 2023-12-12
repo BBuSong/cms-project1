@@ -1,8 +1,8 @@
-package com.example.cmsproject1.service;
+package com.example.cmsproject1.user.service;
 
-import com.example.cmsproject1.domain.SignUpForm;
-import com.example.cmsproject1.domain.model.User;
-import com.example.cmsproject1.domain.repository.UserRepository;
+import com.example.cmsproject1.user.SignUpForm;
+import com.example.cmsproject1.user.entity.User;
+import com.example.cmsproject1.user.repository.UserRepository;
 import java.util.Locale;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

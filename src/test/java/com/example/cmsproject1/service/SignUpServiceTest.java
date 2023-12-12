@@ -1,8 +1,7 @@
 package com.example.cmsproject1.service;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import com.example.cmsproject1.domain.SignUpForm;
+import com.example.cmsproject1.user.SignUpForm;
+import com.example.cmsproject1.user.service.SignUpService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

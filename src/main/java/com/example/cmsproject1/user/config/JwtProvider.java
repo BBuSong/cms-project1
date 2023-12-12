@@ -1,8 +1,8 @@
-package com.example.cmsproject1.config;
+package com.example.cmsproject1.user.config;
 
 
-import com.example.cmsproject1.domain.common.UserVo;
-import com.example.cmsproject1.domain.common.UserType;
+import com.example.cmsproject1.user.type.UserVo;
+import com.example.cmsproject1.user.type.UserType;
 import com.example.cmsproject1.domain.util.Aes256Util;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;

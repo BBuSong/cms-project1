@@ -1,6 +1,6 @@
-package com.example.cmsproject1.domain.user;
+package com.example.cmsproject1.user.dto;
 
-import com.example.cmsproject1.domain.model.User;
+import com.example.cmsproject1.user.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

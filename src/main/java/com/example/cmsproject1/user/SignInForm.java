@@ -1,4 +1,4 @@
-package com.example.cmsproject1.domain;
+package com.example.cmsproject1.user;
 
 import lombok.Getter;
 

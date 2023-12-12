@@ -1,7 +1,7 @@
-package com.example.cmsproject1.controller;
+package com.example.cmsproject1.user.controller;
 
-import com.example.cmsproject1.application.SignInApplication;
-import com.example.cmsproject1.domain.SignInForm;
+import com.example.cmsproject1.user.application.SignInApplication;
+import com.example.cmsproject1.user.SignInForm;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

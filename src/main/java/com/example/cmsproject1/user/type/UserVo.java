@@ -1,4 +1,4 @@
-package com.example.cmsproject1.domain.common;
+package com.example.cmsproject1.user.type;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
