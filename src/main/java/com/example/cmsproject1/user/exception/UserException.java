@@ -1,6 +1,5 @@
 package com.example.cmsproject1.user.exception;
 
-import com.example.cmsproject1.exception.ErrorCode;
 import lombok.Getter;
 
 @Getter

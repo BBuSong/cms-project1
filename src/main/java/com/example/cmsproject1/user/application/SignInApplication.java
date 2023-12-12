@@ -1,6 +1,6 @@
 package com.example.cmsproject1.user.application;
 
-import static com.example.cmsproject1.exception.ErrorCode.LOGIN_CHECK_FAIL;
+import static com.example.cmsproject1.user.exception.ErrorCode.LOGIN_CHECK_FAIL;
 
 import com.example.cmsproject1.user.config.JwtProvider;
 import com.example.cmsproject1.user.SignInForm;

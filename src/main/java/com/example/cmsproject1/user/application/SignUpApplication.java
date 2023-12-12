@@ -2,7 +2,7 @@ package com.example.cmsproject1.user.application;
 
 import com.example.cmsproject1.user.SignUpForm;
 import com.example.cmsproject1.user.entity.User;
-import com.example.cmsproject1.exception.ErrorCode;
+import com.example.cmsproject1.user.exception.ErrorCode;
 import com.example.cmsproject1.user.exception.UserException;
 import com.example.cmsproject1.user.service.SignUpService;
 import lombok.RequiredArgsConstructor;

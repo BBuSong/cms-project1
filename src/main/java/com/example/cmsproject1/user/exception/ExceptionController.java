@@ -1,5 +1,6 @@
-package com.example.cmsproject1.exception;
+package com.example.cmsproject1.user.exception;
 
+import com.example.cmsproject1.user.exception.ErrorCode;
 import com.example.cmsproject1.user.exception.UserException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

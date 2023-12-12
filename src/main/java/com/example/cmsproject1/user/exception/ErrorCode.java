@@ -1,4 +1,4 @@
-package com.example.cmsproject1.exception;
+package com.example.cmsproject1.user.exception;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
