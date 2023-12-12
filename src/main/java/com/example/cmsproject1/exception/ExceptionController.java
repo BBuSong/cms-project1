@@ -1,5 +1,6 @@
 package com.example.cmsproject1.exception;
 
+import jakarta.servlet.ServletException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
