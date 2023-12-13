@@ -8,7 +8,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableJpaAuditing
 @EnableJpaRepositories
-@ServletComponentScan
 @SpringBootApplication
 public class CmsProject1Application {
 

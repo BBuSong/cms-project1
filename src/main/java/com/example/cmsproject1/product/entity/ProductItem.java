@@ -21,10 +21,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.envers.AuditOverride;
 import org.hibernate.envers.Audited;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
 
-@Entity(name = "PRODUCT")
+@Entity
 @Getter
 @Setter
 @NoArgsConstructor
@@ -32,40 +30,26 @@ import org.springframework.data.annotation.LastModifiedDate;
 @Builder
 @Audited
 @AuditOverride(forClass = BaseEntity.class)
-public class ProductItem {
+public class ProductItem extends BaseEntity{
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "product_no")
   private Long id;
 
   private Long userId;
 
   @Audited
-  @Column(name = "product_name")
   private String productName;
 
-  @Column(name = "size")
   private String size;
 
   @Audited
-  @Column(name = "price")
   private int price;
 
-  @Column(name = "delivery_fee")
   private int deliveryFee;
 
-  @Enumerated(EnumType.STRING)
-  private ProductStatus productStatus;
 
-  @CreatedDate
-  private LocalDateTime createdAt;
-
-  @LastModifiedDate
-  private LocalDateTime modifiedAt;
-
-  @ManyToOne(cascade = CascadeType.ALL)
-  @JoinColumn(name = "product_id")
+  @ManyToOne
   private Product product;
 
   public static ProductItem of(Long userId, AddProductItemForm form) {
