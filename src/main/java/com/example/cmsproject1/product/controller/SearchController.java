@@ -2,7 +2,6 @@ package com.example.cmsproject1.product.controller;
 
 import com.example.cmsproject1.product.dto.ProductDto;
 import com.example.cmsproject1.product.service.ProductSearchService;
-import com.example.cmsproject1.user.config.JwtProvider;
 import java.util.List;
 import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;

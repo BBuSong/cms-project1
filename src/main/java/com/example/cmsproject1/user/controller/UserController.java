@@ -2,7 +2,7 @@ package com.example.cmsproject1.user.controller;
 
 import static com.example.cmsproject1.user.exception.ErrorCode.NOT_FOUND_USER;
 
-import com.example.cmsproject1.user.config.JwtProvider;
+import com.example.cmsproject1.config.JwtProvider;
 import com.example.cmsproject1.user.type.UserVo;
 import com.example.cmsproject1.user.entity.User;
 import com.example.cmsproject1.user.dto.UserDto;

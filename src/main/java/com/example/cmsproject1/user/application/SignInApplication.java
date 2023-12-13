@@ -2,7 +2,7 @@ package com.example.cmsproject1.user.application;
 
 import static com.example.cmsproject1.user.exception.ErrorCode.LOGIN_CHECK_FAIL;
 
-import com.example.cmsproject1.user.config.JwtProvider;
+import com.example.cmsproject1.config.JwtProvider;
 import com.example.cmsproject1.user.SignInForm;
 import com.example.cmsproject1.user.type.UserType;
 import com.example.cmsproject1.user.entity.User;

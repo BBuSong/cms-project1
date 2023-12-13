@@ -1,6 +1,6 @@
-package com.example.cmsproject1.user.config.filter;
+package com.example.cmsproject1.config.filter;
 
-import com.example.cmsproject1.user.config.JwtProvider;
+import com.example.cmsproject1.config.JwtProvider;
 import com.example.cmsproject1.user.type.UserVo;
 import com.example.cmsproject1.user.service.UserService;
 import jakarta.servlet.Filter;

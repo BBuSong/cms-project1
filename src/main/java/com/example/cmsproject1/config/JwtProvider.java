@@ -1,4 +1,4 @@
-package com.example.cmsproject1.user.config;
+package com.example.cmsproject1.config;
 
 
 import com.example.cmsproject1.user.type.UserVo;

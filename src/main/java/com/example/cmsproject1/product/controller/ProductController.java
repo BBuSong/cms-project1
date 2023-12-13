@@ -8,7 +8,7 @@ import com.example.cmsproject1.product.dto.ProductDto;
 import com.example.cmsproject1.product.dto.ProductItemDto;
 import com.example.cmsproject1.product.service.ProductItemService;
 import com.example.cmsproject1.product.service.ProductService;
-import com.example.cmsproject1.user.config.JwtProvider;
+import com.example.cmsproject1.config.JwtProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;

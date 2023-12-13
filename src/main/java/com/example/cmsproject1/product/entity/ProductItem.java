@@ -44,9 +44,9 @@ public class ProductItem extends BaseEntity{
   private String size;
 
   @Audited
-  private int price;
+  private Integer price;
 
-  private int deliveryFee;
+  private Integer deliveryFee;
 
 
   @ManyToOne
