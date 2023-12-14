@@ -35,6 +35,10 @@ public class BasketApplication {
     return basketService.addBasket(userId, form);
   }
 
+  public Basket updateBasket(Long userId, Basket basket) {
+    basketService.putBasket(userId, basket);
+    return getBasket(userId);
+  }
   public Basket getBasket(Long userId) {
     Basket basket = refreshBasket(basketService.getBasket(userId));
     Basket returnBasket = new Basket();

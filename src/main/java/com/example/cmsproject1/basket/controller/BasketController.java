@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,6 +34,12 @@ public class BasketController {
   public ResponseEntity<Basket> showBasket(
     @RequestHeader(name = "X_AUTH_TOKEN") String token) {
       return ResponseEntity.ok(basketApplication.getBasket(provider.getUserVo(token).getId()));
+  }
 
+  @PutMapping
+  public ResponseEntity<Basket> updateBasket(
+      @RequestHeader(name = "X_AUTH_TOKEN") String token,
+    @RequestBody Basket basket) {
+  return ResponseEntity.ok(basketApplication.updateBasket(provider.getUserVo(token).getId(), basket));
   }
 }
