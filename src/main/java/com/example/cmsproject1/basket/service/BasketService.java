@@ -19,7 +19,13 @@ public class BasketService {
   private final RedisClient redisClient;
 
   public Basket getBasket(Long userId) {
-    return redisClient.get(userId, Basket.class);
+    Basket basket = redisClient.get(userId, Basket.class);
+    return basket != null?basket:new Basket();
+  }
+
+  public Basket putBasket(Long userId, Basket basket) {
+    redisClient.put(userId, basket);
+    return basket;
   }
 
   public Basket addBasket(Long userId, AddBasketForm form){

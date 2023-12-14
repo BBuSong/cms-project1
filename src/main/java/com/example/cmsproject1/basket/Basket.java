@@ -18,6 +18,11 @@ public class Basket {
   private List<Product> products = new ArrayList<>();
   private List<String> messages = new ArrayList<>();
 
+  public Basket(Long userId) {
+    this.userId = userId;
+  }
+
+
   public void addMessage(String message) {
     messages.add(message);
   }
@@ -61,5 +66,4 @@ public class Basket {
           .build();
     }
   }
-
 }

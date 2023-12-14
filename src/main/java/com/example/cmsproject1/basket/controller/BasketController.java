@@ -7,6 +7,7 @@ import com.example.cmsproject1.basket.service.BasketService;
 import com.example.cmsproject1.config.JwtProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -26,5 +27,12 @@ public class BasketController {
       @RequestHeader(name = "X_AUTH_TOKEN") String token,
       @RequestBody AddBasketForm form) {
     return ResponseEntity.ok(basketApplication.addBasket(provider.getUserVo(token).getId(),form));
+  }
+
+  @GetMapping
+  public ResponseEntity<Basket> showBasket(
+    @RequestHeader(name = "X_AUTH_TOKEN") String token) {
+      return ResponseEntity.ok(basketApplication.getBasket(provider.getUserVo(token).getId()));
+
   }
 }
