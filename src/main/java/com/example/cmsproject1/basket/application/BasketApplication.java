@@ -41,6 +41,7 @@ public class BasketApplication {
   }
   public Basket getBasket(Long userId) {
     Basket basket = refreshBasket(basketService.getBasket(userId));
+    basketService.putBasket(basket.getUserId(), basket);
     Basket returnBasket = new Basket();
     returnBasket.setUserId(userId);
     returnBasket.setProducts(basket.getProducts());
@@ -57,7 +58,7 @@ public class BasketApplication {
     basketService.putBasket(userId, null);
   }
 
-  private Basket refreshBasket(Basket basket) {
+  public Basket refreshBasket(Basket basket) {
 
     Map<Long, Product> productMap = productSearchService.getListByProductIds(
         basket.getProducts().stream().map(Basket.Product::getId).collect(Collectors.toList()))
@@ -128,7 +129,7 @@ public class BasketApplication {
         basket.addMessage(builder.toString());
       }
     }
-    basketService.putBasket(basket.getUserId(), basket);
+
     return basket;
   }
 }
